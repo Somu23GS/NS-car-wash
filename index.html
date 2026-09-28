@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!-- ══════════════════════════════════════════════════════════════════
+     NS AUTOMATIC CAR WASH — WEBSITE
+     ══════════════════════════════════════════════════════════════════
+
+     ✏️✏️✏️  EASY EDIT GUIDE — MEE VIVARALU ELA MARCHALI  ✏️✏️✏️
+     ─────────────────────────────────────────────────────────────────
+     1) PHONE / WHATSAPP / ADDRESS / WORKING HOURS:
+        → "script.js" file open cheyandi → top lo "SITE SETTINGS"
+          block unnadi → akkada values marchandi chaalu.
+          Website motham (top bar, header, hero, contact, form)
+          automatic ga update avtundi. OKKA CHOTA!
+
+     2) GALLERY PHOTOS:
+        → "images" folder lo gallery-1.jpg ... gallery-6.jpg files
+          unnayi. Mee own photos tho replace cheyandi —
+          SAME file name pettandi (gallery-1.jpg lanti).
+          Mee pampina photo kuda "images/my-shop-photo.jpg" lo undi.
+
+     3) GOOGLE MAPS:
+        → Ikkada "MAPS-EDIT" ani search cheyandi (Ctrl+F).
+          Instructions akkade unnayi.
+
+     4) TEXT / HEADINGS / SECTIONS:
+        → Prathi section ki  ═══ banner comment undi (easy to find).
+        → Chala places lo ✏️ EDIT marker unnadi.
+
+     5) FULL INSTRUCTIONS → "EDIT-GUIDE.md" file chudandi.
+     ══════════════════════════════════════════════════════════════════ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b10" />
+  <meta name="description" content="NS Automatic Car Wash — touchless, fast and professional car care." />
+  <title>NS Automatic Car Wash | Clean Cars, Happier Drives</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Icon sprite keeps the page self-contained and avoids external dependencies. -->
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5 9.2 3c.6-.1 1.1.2 1.3.8l1.3 3.1c.2.5.1 1.1-.3 1.5L10 9.9a14.2 14.2 0 0 0 4.1 4.1l1.5-1.5c.4-.4 1-.5 1.5-.3l3.1 1.3c.6.2.9.7.8 1.3l-.5 2.6c-.1.7-.7 1.1-1.4 1.1C10.8 18.5 5.5 13.2 5.5 6.9c0-.7.4-1.3 1.1-1.4Z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M20.2 3.8A10 10 0 0 0 4.4 16.1L3 21l5-1.3A10 10 0 0 0 20.2 3.8Zm-8 16.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.3 8.3 0 1 1 6.9 3.8Zm4.6-6.2c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.3 0-.4.1-.6l.4-.5.2-.4c.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.4c.1.2 1.6 2.5 3.9 3.5 2.3 1 2.3.7 2.7.7.4 0 1.4-.6 1.6-1.1.2-.5.2-.9.1-1.1Z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M7.5 3.5v3M16.5 3.5v3M3.5 9h17M8 13h2M12 13h2M16 13h.1M8 16.5h2M12 16.5h2"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 2 1.7 6.3L20 10l-6.3 1.7L12 18l-1.7-6.3L4 10l6.3-1.7L12 2ZM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16Z"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="m5.2 10.2 1.6-4.1c.2-.6.8-1 1.4-1h7.6c.6 0 1.2.4 1.4 1l1.6 4.1M4 10.2h16c1.1 0 2 .9 2 2v4.3c0 .8-.7 1.5-1.5 1.5h-1v1.5h-2v-1.5h-11v1.5h-2v-1.5h-1c-.8 0-1.5-.7-1.5-1.5v-4.3c0-1.1.9-2 2-2Z"/><path d="M6.7 13.5h.1M17.2 13.5h.1M7 10.2h10"/></symbol>
+    <symbol id="i-foam" viewBox="0 0 24 24"><path d="M7 4h10M8 4v4.2l-3.8 7.1A2.5 2.5 0 0 0 6.4 19h11.2a2.5 2.5 0 0 0 2.2-3.7L16 8.2V4M8 8h8M9 12h6"/><circle cx="5" cy="6" r="1"/><circle cx="19" cy="9" r="1"/><circle cx="20" cy="5" r=".6"/></symbol>
+    <symbol id="i-light" viewBox="0 0 24 24"><path d="M3 12h3M5 6.5l2.2 2.2M5 17.5l2.2-2.2M10 7a5 5 0 0 0 0 10M10 10h10l2 2-2 2H10"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v5.3c0 4.7-3.2 8.2-8 9.7-4.8-1.5-8-5-8-9.7V6l8-3Z"/><path d="m8.5 12 2.3 2.3 4.8-5"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3.5S5.5 10.1 5.5 14.7a6.5 6.5 0 0 0 13 0C18.5 10.1 12 3.5 12 3.5Z"/><path d="M9 15.3a3.1 3.1 0 0 0 3 2"/></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><path d="m5 19 11.5-11.5M14.5 4.5 19.5 9.5M4 8V4M2 6h4M19 20v-4M17 18h4"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10.5a.5.5 0 0 1-.5.5h-17a.5.5 0 0 1-.5-.5V10Z"/><path d="M9 21v-6h6v6M3 10h18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 10-7 10S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.3 4.3L19 6.7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <!-- Scroll progress bar (top lo red line — scroll chestu perugutundi) -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+  <!-- ══════════════════ 1. TOP BAR — phone numbers ══════════════════ -->
+  <div class="topline">
+    <div class="container topline-inner">
+      <span class="topline-status"><i class="status-dot"></i> NOW SERVING · TOUCHLESS CAR CARE</span>
+      <div class="topline-right">
+        <!-- ✏️ EDIT: numbers automatically from script.js "SITE SETTINGS" -->
+        <span class="topline-phones">
+          <a data-phone="phone1" href="tel:+919346594281"><svg class="icon"><use href="#i-phone" /></svg><span data-phone-text="phone1">+91 93465 94281</span></a>
+          <i>•</i>
+          <a data-phone="phone2" href="tel:+919440408803"><span data-phone-text="phone2">+91 94404 08803</span></a>
+        </span>
+        <span class="topline-sep"></span>
+        <a href="#contact">Book your slot <svg class="icon"><use href="#i-arrow" /></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ 2. HEADER + NAVIGATION ══════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="NS Automatic Car Wash home">
+        <span class="brand-mark"><span>NS</span></span>
+        <span class="brand-copy"><strong>NS</strong><em>AUTOMATIC CAR WASH</em></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+        <!-- ✏️ EDIT: call button — number comes from script.js SITE SETTINGS -->
+        <a class="nav-call" data-phone="phone1" href="tel:+919346594281"><svg class="icon"><use href="#i-phone" /></svg><span data-phone-text="phone1">+91 93465 94281</span></a>
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+        <a class="nav-link" href="#why-us">Why us</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-book" href="#booking"><span>Book now</span><svg class="icon"><use href="#i-arrow" /></svg></a>
+      </nav>
+
+      <!-- Mobile: direct call button (always visible on phones) -->
+      <a class="nav-call-mobile" data-phone="phone1" href="tel:+919346594281" aria-label="Call NS Automatic Car Wash"><svg class="icon"><use href="#i-phone" /></svg></a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="main-nav" aria-expanded="false">
+        <svg class="icon icon-menu"><use href="#i-menu" /></svg>
+        <svg class="icon icon-close"><use href="#i-close" /></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ══════════════════ 3. HERO SECTION ══════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> PREMIUM CAR CARE <span class="eyebrow-dot">✦</span> ADVANCED TECHNOLOGY</div>
+          <h1>
+            <span class="h1-line"><span class="h1-inner">Clean cars.</span></span>
+            <span class="h1-line"><span class="h1-inner accent">Happier drives.</span></span>
+          </h1>
+          <p class="hero-lead">A smarter, safer shine for every journey. Bring your car in for touchless technology, deep-clean precision and a finish that turns heads.</p>
+          <!-- ✏️ EDIT: main CTA buttons -->
+          <div class="hero-actions">
+            <a class="button button-primary" data-phone="phone1" href="tel:+919346594281"><svg class="icon"><use href="#i-phone" /></svg> Call now</a>
+            <a class="button button-ghost" href="#booking"><svg class="icon"><use href="#i-calendar" /></svg> Book a wash <svg class="icon arrow"><use href="#i-arrow" /></svg></a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#i-shield" /></svg></span><span><strong>Paint-safe</strong><small>Touchless wash</small></span></div>
+            <div class="trust-separator"></div>
+            <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#i-sparkle" /></svg></span><span><strong>Showroom shine</strong><small>Every single visit</small></span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="bay-card">
+            <div class="bay-topline"><span class="live-pill"><i></i> LIVE BAY</span><span class="bay-id">NS / 001</span></div>
+            <div class="bay-scene">
+              <div class="scene-grid"></div>
+              <span class="scene-gleam"></span>
+              <div class="scene-arch"><span class="arch-light light-one"></span><span class="arch-light light-two"></span><span class="arch-light light-three"></span></div>
+              <div class="wash-beam beam-left"></div><div class="wash-beam beam-right"></div>
+              <div class="water water-one"></div><div class="water water-two"></div><div class="water water-three"></div>
+              <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+              <div class="car-shadow"></div>
+              <svg class="car-svg" viewBox="0 0 650 310" role="img" aria-label="Illustration of a car inside an automatic wash bay">
+                <defs>
+                  <linearGradient id="carBody" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f4f7fa"/><stop offset="0.55" stop-color="#b9c5d2"/><stop offset="1" stop-color="#4a5668"/></linearGradient>
+                  <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#89c0df" stop-opacity=".9"/><stop offset="1" stop-color="#182735" stop-opacity=".95"/></linearGradient>
+                  <filter id="carGlow"><feGaussianBlur stdDeviation="5" /></filter>
+                </defs>
+                <ellipse cx="320" cy="263" rx="218" ry="15" fill="#05080d" opacity=".65" filter="url(#carGlow)"/>
+                <path d="M120 221 160 151c9-16 23-27 41-31l83-15c22-4 44 0 62 13l68 48 84 17c17 3 29 17 29 34v31H120Z" fill="url(#carBody)" stroke="#e8edf2" stroke-width="3"/>
+                <path d="m198 139 83-15c19-3 36 0 50 10l48 39H164l22-27c3-4 7-6 12-7Z" fill="url(#glass)" stroke="#dbe7ef" stroke-width="3"/>
+                <path d="m282 125-1 48M331 130l48 43" stroke="#b8d5e4" stroke-width="2" opacity=".7"/>
+                <path d="M122 221h395" stroke="#1b2029" stroke-width="7"/>
+                <path d="M163 218a34 34 0 1 0 68 0M412 218a34 34 0 1 0 68 0" fill="#0d121a" stroke="#8f9baa" stroke-width="5"/>
+                <circle cx="197" cy="218" r="13" fill="#dce3e8"/><circle cx="446" cy="218" r="13" fill="#dce3e8"/>
+                <path d="M125 194h45M483 190l32 7" stroke="#d93145" stroke-width="6" stroke-linecap="round"/>
+                <path d="M515 188c16 3 22 9 25 16" stroke="#ff5161" stroke-width="5" stroke-linecap="round"/>
+                <path d="M148 176 135 185M505 174l14 9" stroke="#f5fbff" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="218" cy="202" r="4" fill="#ee3b51"/><circle cx="422" cy="202" r="4" fill="#ee3b51"/>
+              </svg>
+              <div class="scene-status"><span class="status-icon"><svg class="icon"><use href="#i-sparkle" /></svg></span><span><strong id="scene-title">FOAM APPLICATION</strong><small id="scene-copy">Dissolving dirt without the harsh touch</small></span></div>
+              <div class="scene-caption">AUTOMATIC BAY <strong>01</strong></div>
+            </div>
+            <div class="bay-footer">
+              <div class="slider-dots" aria-label="Wash process slides">
+                <button class="slide-dot active" type="button" aria-label="Show foam application slide" data-slide="0"></button>
+                <button class="slide-dot" type="button" aria-label="Show rinse slide" data-slide="1"></button>
+                <button class="slide-dot" type="button" aria-label="Show spotless shine slide" data-slide="2"></button>
+              </div>
+              <span class="bay-footer-copy">TOUCHLESS <b>•</b> SAFE <b>•</b> FAST</span>
+            </div>
+          </div>
+          <div class="floating-note note-top"><span class="mini-icon"><svg class="icon"><use href="#i-drop" /></svg></span><span><strong>Less water</strong><small>More care</small></span></div>
+          <div class="floating-note note-bottom"><span class="mini-icon red"><svg class="icon"><use href="#i-check" /></svg></span><span><strong>Finish approved</strong><small>Every visit</small></span></div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span class="hero-bottom-note">Premium care for your everyday drive <svg class="icon"><use href="#i-arrow" /></svg></span></div>
+    </section>
+
+    <!-- ══════════════════ 4. RED TICKER ══════════════════ -->
+    <div class="ticker" aria-label="Services highlights">
+      <div class="ticker-track"><span>TOUCHLESS TECHNOLOGY</span><i>✦</i><span>DEEP FOAM CLEANING</span><i>✦</i><span>PAINT-SAFE FINISH</span><i>✦</i><span>CERAMIC PROTECTION</span><i>✦</i><span>TOUCHLESS TECHNOLOGY</span><i>✦</i><span>DEEP FOAM CLEANING</span><i>✦</i><span>PAINT-SAFE FINISH</span><i>✦</i><span>CERAMIC PROTECTION</span><i>✦</i></div>
+    </div>
+
+    <!-- ══════════════════ 5. SERVICES (9 cards) ══════════════════ -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div><p class="kicker">01 / OUR SERVICES</p><h2>One stop for a<br /><em>better-looking</em> car.</h2></div>
+          <div class="heading-aside"><p>From a quick touchless wash to lasting paint protection, our services are designed around one thing: making your car feel new again.</p><a href="#booking" class="text-link">Find your perfect service <svg class="icon"><use href="#i-arrow" /></svg></a></div>
+        </div>
+
+        <!-- ✏️ EDIT: service card text ikkada marchandi -->
+        <div class="services-grid">
+          <article class="service-card service-card-featured reveal" data-service="Automatic Car Wash">
+            <div class="service-card-top"><span class="service-number">01</span><span class="service-icon"><svg class="icon"><use href="#i-car" /></svg></span></div>
+            <div class="service-card-content"><h3>Automatic<br />Car Wash</h3><p>Touchless technology for a scratch-free shine.</p><a href="#booking" class="service-link" aria-label="Book Automatic Car Wash"><svg class="icon"><use href="#i-arrow" /></svg></a></div>
+            <span class="service-watermark">WASH</span>
+          </article>
+          <article class="service-card reveal reveal-delay-1" data-service="AC Foam Cleaning">
+            <div class="service-card-top"><span class="service-number">02</span><span class="service-icon"><svg class="icon"><use href="#i-foam" /></svg></span></div>
+            <div class="service-card-content"><h3>AC Foam<br />Cleaning</h3><p>Deep cleaning and freshness from the inside out.</p><a href="#booking" class="service-link" aria-label="Book AC Foam Cleaning"><svg class="icon"><use href="#i-arrow" /></svg></a></div>
+          </article>
+          <article class="service-card reveal reveal-delay-2" data-service="Headlights Cleaning">
+            <div class="service-card-top"><span class="service-number">03</span><span class="service-icon"><svg class="icon"><use href="#i-light" /></svg></span></div>
+            <div class="service-card-content"><h3>Headlights<br />Cleaning</h3><p>Brighter lights for safer drives, day or night.</p><a href="#booking" class="service-link" aria-label="Book Headlights Cleaning"><svg class="icon"><use href="#i-arrow" /></svg></a></div>
+          </article>
+          <article class="service-card reveal" data-service="Wax Polish">
+            <div class="service-card-top"><span class="service-number">04</span><span class="service-icon"><svg class="icon"><use href="#i-wand" /></svg></span></div>
+            <div class="service-card-content"><h3>Wax<br />Polish</h3><p>Long-lasting shine with an added layer of protection.</p><a href="#booking" class="service-link" aria-label="Book Wax Polish"><svg class="icon"><use href="#i-arrow" /></svg></a></div>
+          </article>
+          <article class="service-card service-card-red reveal reveal-delay-1" data-service="Ceramic Coating">
+            <div class="service-card-top"><span class="service-number">05</span><span class="service-icon"><svg class="icon"><use href="#i-shield" /></svg></span></div>
+            <div class="service-card-content"><h3>Ceramic<br />Coating</h3><p>Ultimate shine and durability for your paint.</p><a href="#booking" class="service-link" aria-label="Book Ceramic Coating"><svg class="icon"><use href="#i-arrow" /></svg></a></div>
+          </article>
+          <article class="service-card reveal reveal-delay-2" data-service="Teflon Coating">
+            <div class="service-card-top"><span class="service-number">06</span><span class="service-icon"><svg class="icon"><use href="#i-drop" /></svg></span></div>
+            <div class="service-card-content"><h3>Teflon<br />Coating</h3><p>Extra protection from heat, dirt and daily wear.</p><a href="#booking" class="service-link" aria-label="Book Teflon Coating"><svg class="icon"><use href="#i-arrow" /></svg></a></div>
+          </article>
+          <article class="service-card reveal" data-service="Deep Interior Cleaning">
+            <div class="service-card-top"><span class="service-number">07</span><span class="service-icon"><svg class="icon"><use href="#i-sparkle" /></svg></span></div>
+            <div class="service-card-content"><h3>Deep Interior<br />Cleaning</h3><p>Fresh and hygienic comfort, inside and out.</p><a href="#booking" class="service-link" aria-label="Book Deep Interior Cleaning"><svg class="icon"><use href="#i-arrow" /></svg></a></div>
+          </article>
+          <article class="service-card reveal reveal-delay-1" data-service="PPF Service">
+            <div class="service-card-top"><span class="service-number">08</span><span class="service-icon"><svg class="icon"><use href="#i-shield" /></svg></span></div>
+            <div class="service-card-content"><h3>PPF<br />Service</h3><p>Protect your paint and keep the finish looking newer for longer.</p><a href="#booking" class="service-link" aria-label="Book PPF Service"><svg class="icon"><use href="#i-arrow" /></svg></a></div>
+          </article>
+          <article class="service-card reveal reveal-delay-2" data-service="Polishing">
+            <div class="service-card-top"><span class="service-number">09</span><span class="service-icon"><svg class="icon"><use href="#i-wand" /></svg></span></div>
+            <div class="service-card-content"><h3>Polishing</h3><p>Restore the shine and remove visible swirls.</p><a href="#booking" class="service-link" aria-label="Book Polishing"><svg class="icon"><use href="#i-arrow" /></svg></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ 6. HOW IT WORKS (4 steps) ══════════════════ -->
+    <section class="section process-section" id="how-it-works">
+      <div class="process-backdrop"></div>
+      <div class="container">
+        <div class="section-heading centered-heading reveal"><p class="kicker">02 / HOW IT WORKS</p><h2>Simple in. <em>Shiny out.</em></h2><p>Four easy steps. No brushes, no stress — just a clean, confident drive.</p></div>
+        <div class="process-line"></div>
+        <div class="process-grid">
+          <article class="process-step reveal"><div class="step-top"><span class="step-number">01</span><span class="step-icon"><svg class="icon"><use href="#i-car" /></svg></span></div><h3>Vehicle Entry</h3><p>Drive in &amp; relax.</p><span class="step-detail">We set up the bay and get your car ready.</span></article>
+          <article class="process-step reveal reveal-delay-1"><div class="step-top"><span class="step-number">02</span><span class="step-icon"><svg class="icon"><use href="#i-foam" /></svg></span></div><h3>Foam Application</h3><p>Dissolves dirt &amp; grime.</p><span class="step-detail">Deep foam lifts the mess without harsh contact.</span></article>
+          <article class="process-step reveal reveal-delay-2"><div class="step-top"><span class="step-number">03</span><span class="step-icon"><svg class="icon"><use href="#i-drop" /></svg></span></div><h3>Rinse</h3><p>Touchless wash &amp; dry.</p><span class="step-detail">A careful rinse clears away every last trace.</span></article>
+          <article class="process-step reveal reveal-delay-3"><div class="step-top"><span class="step-number">04</span><span class="step-icon"><svg class="icon"><use href="#i-sparkle" /></svg></span></div><h3>Spotless &amp; Shiny</h3><p>Ready to go.</p><span class="step-detail">Pull away with a finish you can feel proud of.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ 7. WHY CHOOSE US ══════════════════ -->
+    <section class="section why-section" id="why-us">
+      <div class="container why-grid">
+        <div class="why-story reveal">
+          <div class="why-story-ring ring-a"></div><div class="why-story-ring ring-b"></div>
+          <div class="why-story-inner"><span class="why-label">THE NS PROMISE</span><div class="why-big-mark">NS</div><p>Your car.<br /><strong>Our priority.</strong></p><span class="why-spark">✦</span></div>
+          <div class="why-stamp"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="stampPath" d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0"/></defs><text><textPath href="#stampPath">NS AUTOMATIC CAR WASH • PREMIUM CARE • </textPath></text></svg><span>✦</span></div>
+        </div>
+        <div class="why-copy reveal reveal-delay">
+          <p class="kicker">03 / WHY CHOOSE NS</p><h2>More than a wash.<br /><em>It’s a better ritual.</em></h2><p class="why-intro">We combine smart technology with careful detailing to give your car the kind of attention you can see, feel and trust.</p>
+          <div class="benefits-grid">
+            <article class="benefit"><span class="benefit-icon"><svg class="icon"><use href="#i-shield" /></svg></span><div><h3>Touchless technology</h3><p>Scratch-free and gentle on your paint.</p></div></article>
+            <article class="benefit"><span class="benefit-icon"><svg class="icon"><use href="#i-sparkle" /></svg></span><div><h3>Professional quality</h3><p>Premium care for your car, every time.</p></div></article>
+            <article class="benefit"><span class="benefit-icon"><svg class="icon"><use href="#i-clock" /></svg></span><div><h3>Time saving</h3><p>Quick, efficient service that fits your day.</p></div></article>
+            <article class="benefit"><span class="benefit-icon"><svg class="icon"><use href="#i-drop" /></svg></span><div><h3>Eco friendly</h3><p>Less water, more care for every wash.</p></div></article>
+            <article class="benefit"><span class="benefit-icon"><svg class="icon"><use href="#i-check" /></svg></span><div><h3>Expert team</h3><p>Experienced, dedicated and detail-focused.</p></div></article>
+            <article class="benefit"><span class="benefit-icon"><svg class="icon"><use href="#i-car" /></svg></span><div><h3>Complete care</h3><p>From wheels to finish, inside and out.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ 8. GALLERY — photos from "images" folder ══════════════════
+         ✏️ EDIT: mee own photos pettalante — images folder lo
+         gallery-1.jpg ... gallery-6.jpg files ni SAME names tho
+         replace cheyandi. Photos click cheyithe zoom avtundi. -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div><p class="kicker">04 / OUR WORK</p><h2>Real shine.<br /><em>Real results.</em></h2></div>
+          <div class="heading-aside"><p>A look at what leaves our bay every day — from everyday washes to full protection packages. Tap any photo to see it up close.</p></div>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal" tabindex="0" role="button" data-caption="TOUCHLESS WASH — Automatic bay in action" aria-label="View photo: automatic touchless wash bay">
+            <img src="images/gallery-1.jpg" alt="Car inside automatic touchless wash bay at night" loading="lazy" />
+            <span class="gallery-tag">AUTOMATIC WASH</span>
+            <span class="gallery-zoom"><svg class="icon"><use href="#i-sparkle" /></svg></span>
+            <figcaption class="gallery-caption"><strong>Touchless bay in action</strong><small>No brushes. No scratches.</small></figcaption>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-1" tabindex="0" role="button" data-caption="FOAM CLEAN — Deep foam treatment" aria-label="View photo: car covered in foam">
+            <img src="images/gallery-2.jpg" alt="Dark car covered in thick white foam" loading="lazy" />
+            <span class="gallery-tag">FOAM CLEAN</span>
+            <span class="gallery-zoom"><svg class="icon"><use href="#i-sparkle" /></svg></span>
+            <figcaption class="gallery-caption"><strong>Deep foam treatment</strong><small>Dirt doesn’t stand a chance.</small></figcaption>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-2" tabindex="0" role="button" data-caption="CERAMIC SHINE — Gloss and water beading" aria-label="View photo: ceramic coating water beading">
+            <img src="images/gallery-3.jpg" alt="Water beading on glossy black ceramic coated hood" loading="lazy" />
+            <span class="gallery-tag">CERAMIC SHINE</span>
+            <span class="gallery-zoom"><svg class="icon"><use href="#i-sparkle" /></svg></span>
+            <figcaption class="gallery-caption"><strong>Ceramic-grade gloss</strong><small>Protection you can see.</small></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" role="button" data-caption="INTERIOR — Spotless interior detailing" aria-label="View photo: clean car interior">
+            <img src="images/gallery-4.jpg" alt="Spotless luxury car interior with leather seats" loading="lazy" />
+            <span class="gallery-tag">INTERIOR</span>
+            <span class="gallery-zoom"><svg class="icon"><use href="#i-sparkle" /></svg></span>
+            <figcaption class="gallery-caption"><strong>Spotless interiors</strong><small>Fresh inside and out.</small></figcaption>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-1" tabindex="0" role="button" data-caption="HEADLIGHTS — Crystal-clear brightness" aria-label="View photo: polished headlight">
+            <img src="images/gallery-5.jpg" alt="Crystal clear polished car headlight close up" loading="lazy" />
+            <span class="gallery-tag">HEADLIGHTS</span>
+            <span class="gallery-zoom"><svg class="icon"><use href="#i-sparkle" /></svg></span>
+            <figcaption class="gallery-caption"><strong>Crystal-clear lights</strong><small>Brighter, safer drives.</small></figcaption>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-2" tabindex="0" role="button" data-caption="POLISHING — Machine polish finish" aria-label="View photo: machine polishing">
+            <img src="images/gallery-6.jpg" alt="Specialist machine polishing a black car" loading="lazy" />
+            <span class="gallery-tag">POLISHING</span>
+            <span class="gallery-zoom"><svg class="icon"><use href="#i-sparkle" /></svg></span>
+            <figcaption class="gallery-caption"><strong>Machine polish finish</strong><small>Swirls gone, shine back.</small></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ 9. PROMISE STRIP ══════════════════ -->
+    <section class="promise-strip">
+      <div class="container promise-inner"><div class="promise-copy"><span class="promise-icon"><svg class="icon"><use href="#i-sparkle" /></svg></span><div><span class="promise-overline">OUR STANDARD</span><strong>Outstanding results, every visit.</strong></div></div><a class="button button-light" href="#booking">Start your shine <svg class="icon arrow"><use href="#i-arrow" /></svg></a></div>
+    </section>
+
+    <!-- ══════════════════ 10. CONTACT + BOOKING FORM ══════════════════ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading split-heading contact-heading reveal">
+          <div><p class="kicker">05 / CONTACT &amp; BOOKING</p><h2>Ready for your<br /><em>best-looking drive?</em></h2></div>
+          <div class="heading-aside"><p>Tell us what your car needs. We’ll help you choose the right service and find a convenient slot.</p><div class="contact-mini-note"><span class="mini-dot"></span> Quick response on WhatsApp</div></div>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-info reveal">
+            <div class="contact-info-top"><span class="kicker">CALL OR WHATSAPP</span><p>Prefer a quick conversation? We’re just a tap away.</p></div>
+            <!-- ✏️ EDIT: numbers automatic from script.js SITE SETTINGS -->
+            <a class="phone-card" data-phone="phone1" href="tel:+919346594281"><span class="contact-icon"><svg class="icon"><use href="#i-phone" /></svg></span><span><small>PRIMARY LINE</small><strong data-phone-text="phone1">+91 93465 94281</strong></span><svg class="icon arrow"><use href="#i-arrow" /></svg></a>
+            <a class="phone-card" data-whatsapp="whatsappSecondary" href="https://wa.me/919440408803" target="_blank" rel="noopener"><span class="contact-icon whatsapp"><svg class="icon"><use href="#i-wa" /></svg></span><span><small>WHATSAPP BOOKINGS</small><strong data-phone-text="phone2">+91 94404 08803</strong></span><svg class="icon arrow"><use href="#i-arrow" /></svg></a>
+            <div class="info-divider"></div>
+            <div class="details-grid">
+              <!-- ✏️ EDIT: working hours — script.js SITE SETTINGS lo "hours" -->
+              <div class="detail-item"><span class="detail-icon"><svg class="icon"><use href="#i-clock" /></svg></span><div><small>WORKING HOURS</small><strong data-hours>Call to confirm today’s slot</strong></div></div>
+              <!-- ✏️ EDIT: address — script.js SITE SETTINGS lo "address" -->
+              <div class="detail-item"><span class="detail-icon"><svg class="icon"><use href="#i-pin" /></svg></span><div><small>SHOP ADDRESS</small><strong data-address>Add your exact shop address here</strong></div></div>
+            </div>
+
+            <!-- ═══════ ✏️ MAPS-EDIT — GOOGLE MAPS IVAKI IKKADA ═══════
+                 1) Google Maps open cheyandi → mee shop search cheyandi
+                 2) "Share" → "Embed a map" → iframe code copy cheyandi
+                 3) Koka div class="map-placeholder" ... /div)
+                    (ikki nunchi "map-note" span varaku) remove cheyandi
+                 4) Ikkada paste cheyandi. Example:
+
+                 <iframe class="map-embed"
+                   src="https://www.google.com/maps/embed?pb=YOUR_CODE"
+                   width="100%" height="220" style="border:0"
+                   allowfullscreen loading="lazy"></iframe>
+                 ══════════════════════════════════════════════ -->
+            <div class="map-placeholder" aria-label="Google Maps embed placeholder"><div class="map-grid-lines"></div><span class="map-pin"><svg class="icon"><use href="#i-pin" /></svg></span><div class="map-label"><strong>NS AUTOMATIC CAR WASH</strong><small>Google Maps embed space</small></div><span class="map-note">Replace with your exact shop address</span></div>
+          </div>
+
+          <!-- ✏️ EDIT: booking form — WhatsApp message script.js lo unnadi -->
+          <div class="booking-card reveal reveal-delay" id="booking">
+            <div class="booking-card-head"><div><span class="kicker">QUICK INQUIRY</span><h3>Book a wash</h3></div><span class="booking-badge"><svg class="icon"><use href="#i-calendar" /></svg> 01</span></div>
+            <p class="booking-sub">Share a few details and we’ll continue on WhatsApp.</p>
+            <form id="booking-form">
+              <div class="form-grid">
+                <label class="field"><span>Your name</span><input type="text" name="name" placeholder="Enter your name" autocomplete="name" required /></label>
+                <label class="field"><span>Phone number</span><input type="tel" name="phone" placeholder="e.g. 93465 94281" autocomplete="tel" required /></label>
+              </div>
+              <label class="field"><span>Car model</span><input type="text" name="car" placeholder="e.g. Hyundai Creta" required /></label>
+              <label class="field"><span>Choose a service</span><select name="service" required><option value="" disabled selected>Select a service</option><option>Automatic Car Wash</option><option>AC Foam Cleaning</option><option>Headlights Cleaning</option><option>Wax Polish</option><option>Ceramic Coating</option><option>Teflon Coating</option><option>Deep Interior Cleaning</option><option>PPF Service</option><option>Polishing</option></select></label>
+              <button class="button button-primary form-submit" type="submit"><svg class="icon"><use href="#i-wa" /></svg> Continue on WhatsApp <svg class="icon arrow"><use href="#i-arrow" /></svg></button>
+              <p class="form-footnote"><svg class="icon"><use href="#i-shield" /></svg> Your details stay private. We only use them to respond to your inquiry.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════ 11. FOOTER ══════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark"><span>NS</span></span><span class="brand-copy"><strong>NS</strong><em>AUTOMATIC CAR WASH</em></span></a><p>Clean cars, happier drives.<br /><span>Premium care. Advanced technology.</span></p><a class="footer-top" href="#home">BACK TO TOP <svg class="icon"><use href="#i-arrow" /></svg></a></div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> NS Automatic Car Wash. All rights reserved.</span><span>TOUCHLESS <b>•</b> SAFE <b>•</b> FAST <b>•</b> CLEAN</span></div>
+  </footer>
+
+  <!-- ══════════════════ 12. EXTRAS — lightbox, toast, back-to-top ══════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lightbox-backdrop"></div>
+    <figure class="lightbox-figure"><img src="" alt="" /><figcaption></figcaption></figure>
+    <button class="lightbox-close" type="button" aria-label="Close photo"><svg class="icon"><use href="#i-close" /></svg></button>
+  </div>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top"><svg class="icon"><use href="#i-arrow" /></svg></button>
+
+  <div class="toast" role="status" aria-live="polite"><span class="toast-icon"><svg class="icon"><use href="#i-check" /></svg></span><span class="toast-copy"><strong>Opening WhatsApp</strong><small>Your booking details are ready to send.</small></span></div>
+  <script src="script.js"></script>
+</body>
+</html>
